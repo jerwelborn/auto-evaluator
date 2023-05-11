@@ -16,11 +16,11 @@ import faiss
 import pandas as pd
 from typing import Dict, List
 from json import JSONDecodeError
-from llama_index import Document
+# from llama_index import Document
 from langchain.chat_models import ChatAnthropic
 from langchain.vectorstores import FAISS
 from langchain.chains import RetrievalQA
-from llama_index import LangchainEmbedding
+# from llama_index import LangchainEmbedding
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import QAGenerationChain
 from langchain.retrievers import SVMRetriever
@@ -30,7 +30,7 @@ from sse_starlette.sse import EventSourceResponse
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI, File, UploadFile, Form
 from langchain.embeddings.openai import OpenAIEmbeddings
-from gpt_index import GPTFaissIndex, LLMPredictor, ServiceContext
+# from gpt_index import GPTFaissIndex, LLMPredictor, ServiceContext
 from langchain.text_splitter import RecursiveCharacterTextSplitter, CharacterTextSplitter
 from text_utils import GRADE_DOCS_PROMPT, GRADE_ANSWER_PROMPT, GRADE_DOCS_PROMPT_FAST, GRADE_ANSWER_PROMPT_FAST, GRADE_ANSWER_PROMPT_BIAS_CHECK, GRADE_ANSWER_PROMPT_OPENAI, QA_CHAIN_PROMPT
 
